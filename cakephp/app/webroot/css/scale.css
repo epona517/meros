@@ -1,0 +1,37 @@
+/* size
+   ========================================================================== */
+/* block, text, password */
+.width_xxs { width: 10%; }
+.width_xs  { width: 20%; }
+.width_s   { width: 35%; }
+.width_m   { width: 50%; }
+.width_l   { width: 65%; }
+.width_xl  { width: 80%; }
+.width_xxl { width: 90%; }
+.width_ful { width: 100%; }
+
+/*button.width_xxs,*/
+/*input[type="button"].width_xxs { width: 11.4%; }*/
+/*button.width_xs ,*/
+/*input[type="button"].width_xs  { width: 21.5%; }*/
+/*button.width_s  ,*/
+/*input[type="button"].width_s   { width: 36.56%; }*/
+/*button.width_m  ,*/
+/*input[type="button"].width_m   { width: 51.45%; }*/
+/*button.width_l  ,*/
+/*input[type="button"].width_l   { width: 66.62%; }*/
+/*button.width_xl ,*/
+/*input[type="button"].width_xl  { width: 81.56%; }*/
+/*button.width_xxl,*/
+/*input[type="button"].width_xxl { width: 91.6%; }*/
+/*button.width_ful,*/
+/*input[type="button"].width_ful { width: 100%; }*/
+
+/*.select.width_xxs { width: 11.4%; }*/
+/*.select.width_xs  { width: 21.6%; }*/
+/*.select.width_s   { width: 36.5%; }*/
+/*.select.width_m   { width: 51.48%; }*/
+/*.select.width_l   { width: 66.7%; }*/
+/*.select.width_xl  { width: 81.52%; }*/
+/*.select.width_xxl { width: 91.54%; }*/
+/*.select.width_ful { width: 100%; }*/

@@ -1,0 +1,111 @@
+/* CSS Reset
+   ========================================================================== */
+html {
+	font-size: 16px;
+	text-align: center;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+li {
+	list-style: none;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+	line-height: 100%;
+	padding: 0px;
+	margin: 0px;
+}
+
+body {
+	background-image: url('../img/confectionary.png');
+	background-color: #f6f7f4;
+}
+
+/* theme color
+   ========================================================================== */
+/* font - black
+   -------------------------------------------------------------------------- */
+body {
+	color: #888;
+}
+
+/* font - white
+   -------------------------------------------------------------------------- */
+#mainHeader {
+	color: #fcfdfa;
+}
+
+/* font - implant
+   -------------------------------------------------------------------------- */
+.implant {
+	color: #6b957b;
+	text-shadow: -1px -1px 1px #629371, 1px 1px 1px #dcddda;
+}
+
+/* background - green
+   -------------------------------------------------------------------------- */
+#mainHeader {
+	background-color: #98c5aa;
+}
+
+/* object theme color - default
+   -------------------------------------------------------------------------- */
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover,
+input[type="button"]:active,
+button:active{
+	border: 1px solid #70afc7;
+}
+
+input[type="button"],
+button {
+	background-color: #70afc7;
+}
+
+/* object theme color - active
+   -------------------------------------------------------------------------- */
+input[type="button"]:hover,
+button:hover {
+	background-color: rgba(112, 175, 199, 0.8);
+}
+
+/* layout
+   ========================================================================== */
+.table_parent { display: table; }
+.table_child { display: table-cell; }
+.table_child_l {
+	display: table-cell;
+	text-align: left;
+}
+.table_child_r {
+	display: table-cell;
+	text-align: right;
+}
+.table_child_c {
+	display: table-cell;
+	text-align: center;
+}
+
+/* icon
+   ========================================================================== */
+button span.genericon {
+	font-size: 1.4em;
+	line-height: 1em;
+	position: relative;
+	left: 5px;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, .25);
+}
+
+/* memo
+   ========================================================================== */
+.mm1 {background: #ffeecc;}
+.mm2 {background: #ffccee;}
+.mm3 {background: #eeffcc;}
+.mm4 {background: #eeccff;}
+.mm5 {background: #ccffee;}
+.mm6 {background: #cceeff;}

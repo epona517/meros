@@ -1,0 +1,84 @@
+/*
+ * Login
+ *
+   ########################################################################## */
+
+/* style structure
+   ========================================================================== */
+header {
+	/*width: 100%;*/
+	/*height: 80px;*/
+	/*color: #fff;*/
+	/*display: block;*/
+	/*position: fixed;*/
+	/*padding: 0px 8px;*/
+	/*box-shadow: 0px 0px 4px 2px #888;*/
+}
+
+/* background */
+body {
+	min-height: 100%;
+	background: url('../img/login_image_02.jpg') no-repeat center;
+	background-size: cover;
+}
+
+#mainContent {
+	width: 100%;
+	padding: 16px 8px;
+	padding-top: 84px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#area_login {
+	margin: 0 auto;
+	margin-top: 64px;
+	text-align: right;
+}
+#area_login ul,
+#area_login li {
+	width: inherit;
+}
+
+	#area_login li {
+		margin-bottom: 8px;
+	}
+	#area_login li:last-child {
+		margin-bottom: 0px;
+	}
+
+		/*#formLoginId,*/
+		/*#formLoginPassword {*/
+		/*	background-color: rgba(255, 255, 255, 0.15);*/
+		/*	color: #fff;*/
+		/*	font-size: 18px;*/
+		/*	width: 30%;*/
+		/*	height: 40px;*/
+		/*	line-height: 150%;*/
+		/*	letter-spacing: 3px;*/
+		/*	border-radius: 0px;*/
+		/*	border: 3px solid rgba(255, 255, 255, 0.4);*/
+		/*}*/
+		/*	#formLoginId:focus,*/
+		/*	#formLoginPassword:focus {*/
+		/*		outline: none;*/
+		/*	}*/
+		/*	#formLoginId::-webkit-input-placeholder,*/
+		/*	#formLoginPassword::-webkit-input-placeholder {*/
+		/*		color: rgba(255, 255, 255, 0.6);*/
+		/*		padding-bottom: 16px;*/
+		/*		letter-spacing: 3px;*/
+		/*	}*/
+		/*#formLoginId {*/
+		/*	border-top-left-radius: 12px;*/
+		/*	border-top-right-radius: 12px;*/
+		/*	border-bottom: 1px solid rgba(255, 255, 255, 0.4);*/
+		/*}*/
+		/*#formLoginPassword {*/
+		/*	border-bottom-left-radius: 12px;*/
+		/*	border-bottom-right-radius: 12px;*/
+		/*	border-top: 1px solid rgba(255, 255, 255, 0.4);*/
+		/*}*/
+
+/* memo
+   ========================================================================== */

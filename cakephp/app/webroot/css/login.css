@@ -1,0 +1,53 @@
+/*@font-face*/
+/*{*/
+/*	font-family: mplus-1p-light;*/
+/*	src: url('http://mplus-fonts.sourceforge.jp/webfonts/mplus-1p-light.ttf')*/
+/*	     format("truetype");*/
+/*}*/
+/*
+ * Login
+ *
+   ########################################################################## */
+
+/* style structure
+   ========================================================================== */
+#mainContent {
+	padding-top: 164px;
+	margin: 0 auto;
+}
+
+#area_login {
+	margin: 0 auto;
+	margin-top: 48px;
+	text-align: center;
+}
+	#area_login li.form_login {
+		margin-bottom: 8px;
+	}
+		#area_login input.form_login {
+			height: 36px;
+			letter-spacing: 4px;
+			line-height: 1.5em;
+			text-decoration: none;
+			ime-mode: disabled;
+		}
+		input[placeholder]::-webkit-input-placeholder {
+			font-size: 15px;
+		}
+
+	#area_login li.button_login {
+		margin-top: 16px;
+		margin-right: 6px;
+		margin-bottom: 12px;
+		text-align: right;
+	}
+		#button_login {
+			height: 48px;
+		}
+
+	#area_login li.check_session {
+		text-align: left;
+	}
+
+/* memo
+   ========================================================================== */
