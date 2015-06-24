@@ -17,18 +17,21 @@
 			<?php echo h($app['viewName']); ?>
 		</div>
 		<div id="mySpace" class="table_child_r">
-			プロフ
+			<div class="wrap_user">
+				<i class="fa fa-user"></i>
+			</div>
 		</div>
 	</header>
 
 	<!--Navigation-->
-	<nav id="mainNav" class="">
-		<ul class="">
-			<li><a href="#"><i class="fa fa-pencil-square-o"></i></a>
-			<li><a href="#" class="nav_txt weekly">W</a>
-			<li><a href="#" class="nav_txt">M</a>
-			<li><a href="#"><i class="fa fa-sign-out"></i></a>
-		</ul>
+	<nav id="mainNav" class="area__nav">
+		<div class="nav__wrap_menu">
+			<ul>
+				<li class="nav_menu"><a href="#"><i class="fa fa-pencil-square-o"></i></a>
+				<li class="nav_menu"><a href="#" class="menu_txt">W</i></a>
+				<li class="nav_menu"><a href="#" class="menu_txt">M</a>
+			</ul>
+		</div>
 	</nav>
 
 	<!--Content-->
