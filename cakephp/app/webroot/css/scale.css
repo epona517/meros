@@ -1,14 +1,22 @@
 /* size
-   ========================================================================== */
+========================================================================== */
 /* block, text, password */
-.width_xxs { width: 10%; }
-.width_xs  { width: 20%; }
-.width_s   { width: 35%; }
-.width_m   { width: 50%; }
-.width_l   { width: 65%; }
-.width_xl  { width: 80%; }
-.width_xxl { width: 90%; }
-.width_ful { width: 100%; }
+.width_xxs  { width: 10%; }
+.width_xs   { width: 20%; }
+.width_s    { width: 35%; }
+.width_m    { width: 50%; }
+.width_l    { width: 65%; }
+.width_xl   { width: 80%; }
+.width_xxl  { width: 90%; }
+.width_full { width: 100%; }
+
+/* preset
+========================================================================== */
+.text_year { width: 80px; }
+.select_month { width: 60px; }
+.select_day { width: 60px; }
+.select_time { width: 60px; }
+
 
 /*button.width_xxs,*/
 /*input[type="button"].width_xxs { width: 11.4%; }*/

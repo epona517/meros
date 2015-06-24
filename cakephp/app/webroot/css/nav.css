@@ -1,0 +1,46 @@
+/*
+ * nav
+ *
+########################################################################## */
+/* structure
+========================================================================== */
+#mainNav {
+	height: 60px;
+	position: fixed;
+	top: 64px;
+	width: 100%;
+	z-index: 60;
+}
+	#mainNav ul {
+		display: table;
+		height: 60px;
+		margin: 0 auto;
+		text-align: center;
+		vertical-align: middle;
+		width: 50%;
+	}
+	#mainNav li {
+		display: table-cell;
+		overflow: hidden;
+		vertical-align: middle;
+	}
+	#mainNav a {
+		background-color: rgba(0, 0, 0, .4);
+		border-radius: 30px;
+		-moz-border-radius: 30px;
+		-webkit-border-radius: 30px;
+		color: #fff;
+		display: inline-block;
+		font-size: 38px;
+		height: 60px;
+		line-height: 1.6em;
+		padding-left: 2px;
+		text-decoration: none;
+		width: 60px;
+	}
+	#mainNav .nav_txt {
+		font-family: serif;
+	}
+		#mainNav i {
+			position: relative;
+		}

@@ -10,12 +10,12 @@
 <body>
 	<!--Header-->
 	<header id="mainHeader" class="table_parent">
-		<section id="systemTitle" class="table_child_c">
+		<div id="systemTitle" class="table_child_c">
 			<h1>
 				<div id="logo" class="frame_circle"></div>
 				<?php echo h(SYSTEM_MAIN_NAME); ?>
 			</h1>
-		</section>
+		</div>
 	</header>
 
 	<!--Navigation-->
@@ -24,12 +24,12 @@
 	</nav>
 
 	<!--Content-->
-	<section id="mainContent" style="width: <?php echo $this->fetch('width_content');?>px;">
+	<div id="mainContent" style="width: <?php echo $this->fetch('width_content');?>px;">
 		<form id="<?php echo $this->fetch('myself'); ?>Form" method="post">
-			<?php echo $this->Session->flash(); ?>
+			<?php echo $this->Session->flash('flashMessage'); ?>
 			<?php echo $this->fetch('content'); ?>
 		</form>
-	</section>
+	</div>
 
 	<!--Footer-->
 	<footer id="mainFooter">

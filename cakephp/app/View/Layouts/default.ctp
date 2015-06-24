@@ -2,7 +2,7 @@
 <html>
 <head>
 	<?php echo $this->Html->charset(); ?>
-	<title></title>
+	<title><?php $this->View->makeTitle($app);?></title>
 	<?php
 		echo $this->element('head');
 	?>
@@ -10,29 +10,43 @@
 <body>
 	<!--Header-->
 	<header id="mainHeader" class="table_parent">
-		<section id="systemTitle" class="table_child_c">
-			<h1>
-				<div id="logo" class="frame_circle"></div>
-				<?php // echo h(SYSTEM_NAME); ?>
-			</h1>
-		</section>
+		<div id="systemTitle" class="table_child_l">
+			<?php echo h(SYSTEM_MAIN_NAME); ?>
+		</div>
+		<div id="viewTitle" class="table_child_c">
+			<?php echo h($app['viewName']); ?>
+		</div>
+		<div id="mySpace" class="table_child_r">
+			プロフ
+		</div>
 	</header>
 
 	<!--Navigation-->
-	<nav id="mainNav">
-
+	<nav id="mainNav" class="">
+		<ul class="">
+			<li><a href="#"><i class="fa fa-pencil-square-o"></i></a>
+			<li><a href="#" class="nav_txt weekly">W</a>
+			<li><a href="#" class="nav_txt">M</a>
+			<li><a href="#"><i class="fa fa-sign-out"></i></a>
+		</ul>
 	</nav>
 
 	<!--Content-->
-	<section id="mainContent" style="width: <?php echo $this->fetch('width_content');?>px;">
-			<?php echo $this->Session->flash(); ?>
+	<div id="mainContent" style="width: <?php echo $this->fetch('width_content');?>px;">
+		<form id="<?php echo $this->fetch('myself'); ?>Form" method="post">
+			<?php echo $this->Session->flash('flashMessage'); ?>
 			<?php echo $this->fetch('content'); ?>
-	</section>
+		</form>
+	</div>
 
 	<!--Footer-->
 	<footer id="mainFooter">
 
 	</footer>
+
+	<!-- Hidden for Javascript -->
+	<input type="hidden" id="myself" value="<?php echo $this->fetch('myself'); ?>">
+	<input type="hidden" id="rootPath" value="<?php $this->View->getProjectPath(); ?>">
 
 	<!--Javascript-->
 	<?php

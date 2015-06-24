@@ -1,0 +1,153 @@
+/*
+ * Request
+ *
+########################################################################## */
+
+/* structure
+========================================================================== */
+#mainContent {
+	margin: 0 auto;
+	padding-top: 120px;
+}
+
+#area__car_inf {
+	margin: 16px 8px 0;
+	width: 100%;
+}
+	#tbl__car_inf {
+		width: 480px;
+		margin-left: auto;
+		margin-right: 0;
+	}
+		#tbl__car_inf .inf_th__ttl {
+			width: 25%;
+		}
+		#tbl__car_inf .inf_th__ctt {
+			width: 75%;
+		}
+
+#area__date {
+	width: 100%;
+}
+	#tbl__date {
+		width: 1024px;
+		margin: 0 auto;
+	}
+		#tbl__date .inf_th__ttl {
+			width: 10%;
+		}
+		#tbl__date .inf_th__ctt {
+			width: 90%;
+		}
+
+		#btn_confirm {
+			margin-left: 16px;
+		}
+
+#area__action {
+	width: 100%;
+	margin-bottom: 24px;
+}
+	#tbl__action {
+		width: 1024px;
+		margin: 0 auto;
+	}
+		#tbl__action .inf_th__ttl {
+			width: 10%;
+		}
+		#tbl__action .inf_th__ctt {
+			width: 90%;
+		}
+			.action_buttons button {
+				float: left;
+				height: 32px;
+				margin-right: 24px;
+			}
+
+#area__time_tbl {
+	width: 100%;
+}
+	#tbl__time_tbl {
+		width: 1024px;
+		margin: 0 auto;
+	}
+
+		th.edit_status { width: 3%; }
+		th.start_time  { width: 15%; }
+		th.end_time    { width: 15%; }
+		th.destination { width: 54%; }
+		th.status      { width: 8%; }
+		th.cancel      { width: 5%; }
+
+/* object
+========================================================================== */
+.tbl__inf {
+	border: 0px;
+	border-collapse: separate;
+	border-spacing: 2px;
+	box-sizing: border-box;
+}
+	.tbl__inf tr {
+		border: 1px solid #fff;
+	}
+	.tbl__inf th {
+		background-color: #ccc;
+		font-weight: normal;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);
+	}
+	.tbl__inf td {
+		background-color: #eee;
+		padding: 4px 6px;
+		text-align: left;
+	}
+
+.tbl__conditions {
+	border: 0px;
+	border-collapse: separate;
+	border-spacing: 6px;
+}
+	.tbl__conditions tr {
+		border: 1px solid #fff;
+	}
+	.tbl__conditions th {
+		background-color: #ccc;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		font-weight: normal;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);
+	}
+	.tbl__conditions td {
+		background-color: transparent;
+		padding: 4px 16px;
+		text-align: left;
+		border-bottom: 2px #ccc solid;
+	}
+
+.tbl__list {
+	border: 0px;
+	border-collapse: separate;
+	border-spacing: 4px;
+}
+	.tbl__list tr {
+		border: 1px solid #fff;
+	}
+	.tbl__list th {
+		background-color: #98c5aa;
+		border-radius: 4px;
+		-moz-border-radius: 4px;
+		-webkit-border-radius: 4px;
+		color: #fff;
+		font-weight: normal;
+		text-align: center;
+		text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
+	}
+	.tbl__list td {
+		background-color: transparent;
+		padding: 4px 6px;
+		text-align: left;
+	}
+/* memo
+========================================================================== */
