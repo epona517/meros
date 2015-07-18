@@ -6,46 +6,54 @@
 
 	// Form作成時、labelとdivの自動生成なし
 	$this->Form->inputDefaults(array(
-	        // 'label' => false,
-	        'div' => false,
+			// 'label' => false,
+			'div' => false,
 	));
 ?>
-<!-- 車輌情報 -->
-<header id="area__car_inf" class="">
-	<table id="tbl__car_inf" class="tbl__inf">
-		<thead>
-			<tr>
-				<th class="inf_th__ttl">
-				<th class="inf_th__ctt">
-		<tbody>
-			<tr>
-				<th class="inf_tb__ttl">顧客名
-				<td class="inf_tb__ctt">
-					<?php
-						// 顧客名
-						echo $this->Form->input('form.customerName', array(
-								'type' => 'text',
-								'value' => '',
-								'maxlength' => 45,
-								'class' => 'width_full',
-								'placeholder' => '顧客名',
-								'label' => array(
-										'class' => 'hidden',
-										'text' => '顧客名'
-									)
-						));
-					?>
-			<tr>
-				<th class="inf_tb__ttl">車輌ナンバー
-				<td class="inf_tb__ctt">
-					<div class="select width_full">
-						<select>
-							<option value="1" selected>その１</option>
-							<option value="2">その２</option>
-						</select>
-						<span class="carat"></span>
-					</div>
-	</table>
+<header class="clearfix">
+	<!--日付-->
+	<section id="area__date2" class="flt">
+		<input type="date" id="date" value="<?php echo date('Y-m-d'); ?>">
+
+	</section>
+
+	<!-- 車輌情報 -->
+	<section id="area__car_inf" class="flt">
+		<table id="tbl__car_inf" class="tbl__inf">
+			<thead>
+				<tr>
+					<th class="inf_th__ttl">
+					<th class="inf_th__ctt">
+			<tbody>
+				<tr>
+					<th class="inf_tb__ttl">顧客名
+					<td class="inf_tb__ctt">
+						<?php
+							// 顧客名
+							echo $this->Form->input('form.customerName', array(
+									'type' => 'text',
+									'value' => '',
+									'maxlength' => 45,
+									'class' => 'width_full',
+									'placeholder' => '顧客名',
+									'label' => array(
+											'class' => 'hidden',
+											'text' => '顧客名'
+										)
+							));
+						?>
+				<tr>
+					<th class="inf_tb__ttl">車輌ナンバー
+					<td class="inf_tb__ctt">
+						<div class="select width_full">
+							<select>
+								<option value="1" selected>その１</option>
+								<option value="2">その２</option>
+							</select>
+							<span class="carat"></span>
+						</div>
+		</table>
+	</section>
 </header>
 <!-- 日付 -->
 <section id="area__date" class="">
@@ -96,7 +104,7 @@
 					<i class="fa fa-calendar"></i>
 
 					<!--表示ボタン-->
-					<button type="button" id="btn_confirm" class="width_xs">
+					<button type="button" id="btn_execute" class="width_xs">
 						<i class="fa fa-search"></i>
 						表示
 					</button>
@@ -138,7 +146,7 @@
 	<table id="tbl__time_tbl" class="tbl__list">
 		<thead>
 			<tr>
-				<th class="list_th edit_status">編集状況
+				<th class="list_th edit_status"><i class="fa fa-info-circle"></i>
 				<th class="list_th start_time">開始時刻
 				<th class="list_th end_time">終了時刻
 				<th class="list_th destination">目的地

@@ -24,6 +24,20 @@
 	<label for="testRadio" class="radio">ラベル</label><br><br>
 	<input type="checkbox" id="testCheck">
 	<label for="testCheck" class="checkbox">チェック</label><br><br>
+		<?php
+			echo $this->Form->input('form.requestDate', array(
+					'type' => 'date',
+					'dateFormat' => 'YMD',
+					'monthNames' => false,
+					'maxYear' => date('Y'),
+					'minYear' => date('Y') - 1,
+					'separator' => array('年', '月', '日'),
+					'label' => array(
+							'class' => 'hidden',
+							'text' => '日付'
+					)
+			));
+		?>
 </div>
 <script type="text/javascript">
 	$(function() {

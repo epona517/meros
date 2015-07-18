@@ -8693,3 +8693,26 @@ Stack Trace:
 #1 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest))
 #2 /home/ubuntu/workspace/cakephp/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #3 {main}
+2015-07-16 19:00:25 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2003] Can\'t connect to MySQL server on \'epona517-epona-1071299\' (111)',
+  'enabled' => true,
+)
+Request URL: /cakephp/login/auth
+Stack Trace:
+#0 /home/ubuntu/workspace/cakephp/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /home/ubuntu/workspace/cakephp/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /home/ubuntu/workspace/cakephp/lib/Cake/Model/Model.php(3545): ConnectionManager::getDataSource('default')
+#3 /home/ubuntu/workspace/cakephp/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /home/ubuntu/workspace/cakephp/lib/Cake/Model/Model.php(3572): Model->setSource('account_views')
+#5 /home/ubuntu/workspace/cakephp/lib/Cake/Model/Model.php(2950): Model->getDataSource()
+#6 /home/ubuntu/workspace/cakephp/lib/Cake/Model/Model.php(2922): Model->_readDataSource('all', Array)
+#7 /home/ubuntu/workspace/cakephp/app/Model/AccountView.php(22): Model->find('all', Array)
+#8 /home/ubuntu/workspace/cakephp/app/Controller/LoginController.php(34): AccountView->getAccountInfo('')
+#9 [internal function]: LoginController->auth()
+#10 /home/ubuntu/workspace/cakephp/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(LoginController), Array)
+#11 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#12 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest))
+#13 /home/ubuntu/workspace/cakephp/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#14 {main}

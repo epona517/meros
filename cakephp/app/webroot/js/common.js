@@ -84,7 +84,7 @@ common.popupMessage = function(title, message, _buttons) {
 				easing: 'swing',
 				effect: 'blind'
 			},
-			button: _buttons,
+			buttons: _buttons,
 			title: common.getMessageTitle(title)
 		})
 		.html(message)

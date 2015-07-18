@@ -18,7 +18,7 @@
 		box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, .2);
 		height: 40px;
 		margin: 0 auto;
-		width: 97%;
+		width: 98%;
 	}
 		#mainNav ul {
 			display: table;
@@ -34,9 +34,9 @@
 			#mainNav a {
 				background-color: rgba(0, 0, 0, 0);
 				border: 1px solid #fff;
-				border-radius: 8px;
-				-moz-border-radius: 8px;
-				-webkit-border-radius: 8px;
+				border-radius: 6px;
+				-moz-border-radius: 6px;
+				-webkit-border-radius: 6px;
 				color: #fff;
 				display: inline-block;
 				font-size: 20px;
@@ -47,6 +47,5 @@
 				width: 30px;
 			}
 			#mainNav .menu_txt {
-				font-family: serif;
 				font-weight: bold;
 			}

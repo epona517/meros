@@ -2592,7 +2592,19 @@ class FormHelper extends AppHelper {
 					break;
 			}
 		}
-		$opt = implode($separator, $selects);
+		// TODO: inputのdateが「ー」区切りであるので、年月日区切りにするように変更。2015/07/18
+		// $opt = implode($separator, $selects);
+		// 変更後 2015/07/18
+		$opt = '';
+		if (is_array($separator)) {
+			$i = 0;
+			foreach($selects as $select) {
+				$opt .= $select . $separator[$i];
+				$i++;
+			}
+		} else {
+			$opt = implode($separator, $selects);
+		}
 
 		$attrs['Minute']['interval'] = $interval;
 		switch ($timeFormat) {

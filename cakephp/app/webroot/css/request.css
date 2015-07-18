@@ -10,9 +10,17 @@
 	padding-top: 120px;
 }
 
+#area__date2 {
+	width: 50%;
+	float: left;
+}
+
 #area__car_inf {
-	margin: 16px 8px 0;
-	width: 100%;
+	/*margin: 16px 8px 0;*/
+	/*width: 100%;*/
+
+	width: 50%;
+	float: left;
 }
 	#tbl__car_inf {
 		width: 480px;
@@ -40,7 +48,7 @@
 			width: 90%;
 		}
 
-		#btn_confirm {
+		#btn_execute {
 			margin-left: 16px;
 		}
 
@@ -86,15 +94,16 @@
 	border-collapse: separate;
 	border-spacing: 2px;
 	box-sizing: border-box;
+	table-layout: fixed;
 }
 	.tbl__inf tr {
 		border: 1px solid #fff;
 	}
 	.tbl__inf th {
 		background-color: #ccc;
-		font-weight: normal;
+		font-weight: bold;
 		text-align: center;
-		text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);
+		/*text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);*/
 	}
 	.tbl__inf td {
 		background-color: #eee;
@@ -106,6 +115,7 @@
 	border: 0px;
 	border-collapse: separate;
 	border-spacing: 6px;
+	table-layout: fixed;
 }
 	.tbl__conditions tr {
 		border: 1px solid #fff;
@@ -115,9 +125,9 @@
 		border-radius: 4px;
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
-		font-weight: normal;
+		font-weight: bold;
 		text-align: center;
-		text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);
+		/*text-shadow: 1px 1px 1px rgba(255, 255, 255, .7);*/
 	}
 	.tbl__conditions td {
 		background-color: transparent;
@@ -130,17 +140,19 @@
 	border: 0px;
 	border-collapse: separate;
 	border-spacing: 4px;
+	table-layout: fixed;
 }
 	.tbl__list tr {
 		border: 1px solid #fff;
 	}
 	.tbl__list th {
-		background-color: #98c5aa;
+		background-color: #63A3B2;
 		border-radius: 4px;
 		-moz-border-radius: 4px;
 		-webkit-border-radius: 4px;
 		color: #fff;
 		font-weight: normal;
+		padding: 12px 0;
 		text-align: center;
 		text-shadow: 1px 1px 1px rgba(0, 0, 0, .3);
 	}

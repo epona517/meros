@@ -21,7 +21,7 @@
 				<i class="fa fa-user"></i>
 			</div>
 		</div>
-	</header>
+	</header>#
 
 	<!--Navigation-->
 	<nav id="mainNav" class="area__nav">

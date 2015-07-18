@@ -11,10 +11,17 @@ input[type="password"] {
 	font-size: 14px;
 	height: 30px;
 	padding: 2px 6px;
+	transition: background-color .2s linear;
+}
+input[type="text"]:hover,
+input[type="password"]:hover {
+	background-color: rgba(204, 192, 58, .1);
+	transition: background-color 1s ease-out;
 }
 input[type="text"]:focus,
 input[type="password"]:focus {
 	outline: none;
+	background-color: rgba(98, 224, 255, .1);
 }
 /* placeholder */
 input[placeholder]::-webkit-input-placeholder {
@@ -77,12 +84,13 @@ button.mortion::after {
 
 /** type: whiteout */
 .mortion_whiteout {
-	border: 2px solid #70afc7;
+	border: 2px solid #CCBF3A;
 }
 .mortion_whiteout:hover {
-	border: 2px solid #608fa7;
+	border: 2px solid #CCBF3A;
 	background-color: #fff;
-	color: #608fa7;
+	color: #CCBF3A;
+	text-shadow: none;
 }
 
 /** type: transparent */
@@ -120,11 +128,11 @@ input[type="checkbox"] {
 }
 .radio:hover,
 .checkbox:hover {
-	/*background-color: #e2edd7;*/
+	background-color: rgba(204, 192, 58, 0.2);
 }
 .radio:hover:after,
 .checkbox:hover:after {
-	border-color: #70afc7;
+	border-color: #CCBF3A;
 }
 .radio:after,
 .checkbox:after {
@@ -152,7 +160,7 @@ input[type="checkbox"] {
 	width: 10px;
 	height: 10px;
 	border-radius: 50%;
-	background-color: #70afc7;
+	background-color: #CCBF3A;
 	content: '';
 	opacity: 0;
 }
@@ -170,8 +178,8 @@ input[type="radio"]:checked + .radio:before {
 	margin-top: -7px;
 	width: 5px;
 	height: 9px;
-	border-right: 3px solid #70afc7;
-	border-bottom: 3px solid #70afc7;
+	border-right: 3px solid #CCBF3A;
+	border-bottom: 3px solid #CCBF3A;
 	content: '';
 	opacity: 0;
 	-webkit-transform: rotate(45deg);
@@ -209,12 +217,18 @@ input[type=checkbox]:checked + .checkbox:before {
 		padding: 2px;
 		padding-left: 8px;
 		text-overflow: '';
+		transition: background-color .2s linear;
 		vertical-align: middle;
 		width: 100%;
 		/*margin-left: 3px;*/
 	}
 	.select select:hover {
-		border: 1px solid #70afc7;
+		border: 1px solid #CCBF3A;
+		background-color: rgba(204, 192, 58, .1);
+		transition: background-color 1s ease-out;
+	}
+	.select select:focus {
+		background-color: rgba(98, 224, 255, .1);
 	}
 	select + .carat {
 		cursor: pointer;
@@ -226,10 +240,10 @@ input[type=checkbox]:checked + .checkbox:before {
 		border-top: 8px solid #bbb;
 	}
 	select + .carat:hover {
-		border-top-color: #70afc7;
+		border-top-color: #CCBF3A;
 	}
 	select + .carat:active {
-		border-top-color: #70afc7;
+		border-top-color: #CCBF3A;
 	}
 
 /* textarea
