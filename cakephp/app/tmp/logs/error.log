@@ -8716,3 +8716,67 @@ Stack Trace:
 #12 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(LoginController), Object(CakeRequest))
 #13 /home/ubuntu/workspace/cakephp/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
 #14 {main}
+2015-07-18 17:21:22 Error: Fatal Error (4): syntax error, unexpected ''placeholder'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in [/home/ubuntu/workspace/cakephp/app/View/Request/index.ctp, line 73]
+2015-07-18 17:21:22 Error: [FatalErrorException] syntax error, unexpected ''placeholder'' (T_CONSTANT_ENCAPSED_STRING), expecting ')'
+Request URL: /cakephp/Request
+Stack Trace:
+#0 /home/ubuntu/workspace/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 73)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 73, Array)
+#2 /home/ubuntu/workspace/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 73, Array)
+#3 /home/ubuntu/workspace/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-07-18 17:21:22 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephp/app/webroot/js/.js
+Stack Trace:
+#0 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/cakephp/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-07-18 17:21:23 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephp/app/webroot/css/.css
+Stack Trace:
+#0 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/cakephp/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-08 16:46:42 Error: Fatal Error (4): syntax error, unexpected 'echo' (T_ECHO) in [/home/ubuntu/workspace/cakephp/app/View/Request/index.ctp, line 219]
+2015-08-08 16:46:42 Error: [FatalErrorException] syntax error, unexpected 'echo' (T_ECHO)
+Request URL: /cakephp/Request
+Stack Trace:
+#0 /home/ubuntu/workspace/cakephp/lib/Cake/Error/ErrorHandler.php(203): ErrorHandler::handleFatalError(4, 'syntax error, u...', '/home/ubuntu/wo...', 219)
+#1 [internal function]: ErrorHandler::handleError(4, 'syntax error, u...', '/home/ubuntu/wo...', 219, Array)
+#2 /home/ubuntu/workspace/cakephp/lib/Cake/Core/App.php(931): call_user_func('ErrorHandler::h...', 4, 'syntax error, u...', '/home/ubuntu/wo...', 219, Array)
+#3 /home/ubuntu/workspace/cakephp/lib/Cake/Core/App.php(904): App::_checkFatalError()
+#4 [internal function]: App::shutdown()
+#5 {main}
+2015-08-08 16:46:43 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephp/app/webroot/js/.js
+Stack Trace:
+#0 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/cakephp/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}
+2015-08-08 16:46:43 Error: [MissingActionException] Action AppController::webroot() could not be found.
+Exception Attributes: array (
+  'controller' => 'AppController',
+  'action' => 'webroot',
+)
+Request URL: /cakephp/app/webroot/css/.css
+Stack Trace:
+#0 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(193): Controller->invokeAction(Object(CakeRequest))
+#1 /home/ubuntu/workspace/cakephp/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(AppController), Object(CakeRequest))
+#2 /home/ubuntu/workspace/cakephp/app/webroot/index.php(111): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 {main}

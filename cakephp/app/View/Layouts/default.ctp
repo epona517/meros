@@ -11,12 +11,13 @@
 	<!--Header-->
 	<header id="mainHeader" class="table_parent">
 		<div id="systemTitle" class="table_child_l">
+			<i class="fa fa-car"></i>
 			<?php echo h(SYSTEM_MAIN_NAME); ?>
 		</div>
 		<div id="viewTitle" class="table_child_c">
 			<?php echo h($app['viewName']); ?>
 		</div>
-		<div id="mySpace" class="table_child_r">
+		<div id="mySpace" class="table_child_c">
 			<div class="wrap_user">
 				<i class="fa fa-user"></i>
 			</div>

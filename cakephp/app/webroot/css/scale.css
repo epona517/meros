@@ -13,9 +13,7 @@
 /* preset
 ========================================================================== */
 .text_year { width: 80px; }
-.select_month { width: 60px; }
-.select_day { width: 60px; }
-.select_time { width: 60px; }
+.select_month, .select_day, .select_time { width: 56px; }
 
 
 /*button.width_xxs,*/

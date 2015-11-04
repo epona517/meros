@@ -5,4 +5,4 @@
  */
 
 /** システム名 */
-const SYSTEM_MAIN_NAME = 'Meros';
+const SYSTEM_MAIN_NAME = 'RANN';

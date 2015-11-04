@@ -12,11 +12,54 @@
 ?>
 <header class="clearfix">
 	<!--日付-->
-	<section id="area__date2" class="flt">
-		<input type="date" id="date" value="<?php echo date('Y-m-d'); ?>">
-
+	<section id="area__request_date" class="flt">
+		<?php
+			// 年
+			$lblRequestYear = '年';
+			echo $this->Form->input('form.request.year', array(
+					'type' => 'text',
+					'value' => date('Y'),
+					'maxlength' => 4,
+					'class' => 'text_year',
+					'placeholder' => $lblRequestYear,
+					'label' => array(
+							'class' => 'hidden',
+							'text' => $lblRequestYear
+					),
+					'after' => '<span>' . $lblRequestYear . '</span>'
+			));
+			// 月
+			$lblRequestMonth = '月';
+			echo $this->Form->input('form.request.month', array(
+					'type' => 'select',
+					'options' => array('1' => '1', '2' => '2', '3' => '3'),
+					'selected' => '2',
+					'class' => 'select_month',
+					'label' => array(
+							'class' => 'hidden',
+							'text' => $lblRequestMonth
+					),
+					'after' => '<span>' . $lblRequestMonth . '</span>',
+					// 空白を許可
+					// 'empty' => true
+			));
+			// 日
+			$lblRequestDay = '日';
+			echo $this->Form->input('form.request.day', array(
+					'type' => 'select',
+					'options' => array('1' => '1', '2' => '2', '3' => '3'),
+					'selected' => '2',
+					'class' => 'select_day',
+					'label' => array(
+							'class' => 'hidden',
+							'text' => $lblRequestDay
+					),
+					'after' => '<span>' . $lblRequestDay . '</span>',
+					// 空白を許可
+					// 'empty' => true
+			));
+		?>
 	</section>
-
 	<!-- 車輌情報 -->
 	<section id="area__car_inf" class="flt">
 		<table id="tbl__car_inf" class="tbl__inf">
@@ -26,7 +69,11 @@
 					<th class="inf_th__ctt">
 			<tbody>
 				<tr>
-					<th class="inf_tb__ttl">顧客名
+					<th class="inf_tb__ttl">
+						<?php
+							$lblCustomerName = '顧客名';
+							echo $lblCustomerName;
+						?>
 					<td class="inf_tb__ctt">
 						<?php
 							// 顧客名
@@ -35,81 +82,38 @@
 									'value' => '',
 									'maxlength' => 45,
 									'class' => 'width_full',
-									'placeholder' => '顧客名',
+									'placeholder' => $lblCustomerName,
 									'label' => array(
 											'class' => 'hidden',
-											'text' => '顧客名'
+											'text' => $lblCustomerName
 										)
 							));
 						?>
 				<tr>
-					<th class="inf_tb__ttl">車輌ナンバー
+					<th class="inf_tb__ttl">
+						<?php
+							$lblCarNumber = '車輌ナンバー';
+							echo $lblCarNumber;
+						?>
 					<td class="inf_tb__ctt">
-						<div class="select width_full">
-							<select>
-								<option value="1" selected>その１</option>
-								<option value="2">その２</option>
-							</select>
-							<span class="carat"></span>
-						</div>
+						<?php
+							echo $this->Form->input('form.carNumber', array(
+									'type' => 'select',
+									'options' => array('1' => 'その1', '2' => 'その2', '3' => 'その3'),
+									'selected' => '1',
+									'class' => 'select_carNumber width_full',
+									'label' => array(
+											'class' => 'hidden',
+											'text' => $lblCarNumber
+									)
+									// 空白を許可
+									// TODO: モードによって切り替え
+									// 'empty' => true
+							));
+						?>
 		</table>
 	</section>
 </header>
-<!-- 日付 -->
-<section id="area__date" class="">
-	<table id="tbl__date" class="tbl__conditions">
-		<thead>
-			<tr>
-				<th class="inf_th__ttl">
-				<th class="inf_th__ctt">
-		<tbody>
-			<tr>
-				<th class="inf_tb__ttl">日付
-				<td class="inf_tb__ctt">
-					<?php
-						// 年
-						echo $this->Form->input('form.year', array(
-								'type' => 'text',
-								'value' => '2015',
-								'maxlength' => 4,
-								'class' => 'text_year',
-								'placeholder' => '年',
-								'label' => array(
-										'class' => 'hidden',
-										'text' => '年'
-								)
-						));
-					?>
-					年
-
-					<!-- 月 -->
-					<div class="select width_xxs select_month">
-						<select>
-							<option value="1" selected>6</option>
-							<option value="2">7</option>
-						</select>
-						<span class="carat"></span>
-					</div>
-					月
-
-					<!--日-->
-					<div class="select select_day">
-						<select>
-							<option value="1" selected>16</option>
-							<option value="2">17</option>
-						</select>
-						<span class="carat"></span>
-					</div>
-					日（月）
-					<i class="fa fa-calendar"></i>
-
-					<!--表示ボタン-->
-					<button type="button" id="btn_execute" class="width_xs">
-						<i class="fa fa-search"></i>
-						表示
-					</button>
-	</table>
-</section>
 <!--操作-->
 <section id="area__action">
 	<table id="tbl__action" class="tbl__conditions">
@@ -156,65 +160,76 @@
 			<tr>
 				<td class="list_td edit_status">ao
 
-				<td class="list_td start_time">
-					<div class="select select_time">
-						<select>
-							<option value="0" selected>0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-						</select>
-						<span class="carat"></span>
-					</div>
-					:
-					<div class="select select_time">
-						<select>
-							<option value="0" selected>0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-						</select>
-						<span class="carat"></span>
-					</div>
-
-				<td class="list_td end_time">
-					<div class="select select_time">
-						<select>
-							<option value="0" selected>0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-						</select>
-						<span class="carat"></span>
-					</div>
-					:
-					<div class="select select_time">
-						<select>
-							<option value="0" selected>0</option>
-							<option value="1">1</option>
-							<option value="2">2</option>
-							<option value="3">3</option>
-						</select>
-						<span class="carat"></span>
-					</div>
-
-				<td class="list_td destination">
+				<td class="list_td start_time ta_center">
 					<?php
-						// 目的地
-						echo $this->Form->input('form.destination', array(
-								'type' => 'text',
-								'value' => '',
-								'maxlength' => 45,
-								'class' => 'width_full',
-								'placeholder' => '目的地',
+						$lblStartTime = '開始時刻';
+						echo $this->Form->input('form.startTimeHh', array(
+								'type' => 'select',
+								'options' => array('0' => '0', '1' => '1', '2' => '2', '10' => '10'),
+								'selected' => '0',
+								'class' => 'select_time',
 								'label' => array(
 										'class' => 'hidden',
-										'text' => '目的地'
+										'text' => $lblStartTime
+								),
+								'after' => ':'
+						));
+						echo $this->Form->input('form.startTimeMm', array(
+								'type' => 'select',
+								'options' => array('0' => '0', '5' => '5', '10' => '10'),
+								'selected' => '1',
+								'class' => 'select_time',
+								'label' => array(
+										'class' => 'hidden',
+										'text' => $lblStartTime
 								)
 						));
 					?>
 
-				<td class="list_td status">
+				<td class="list_td end_time ta_center">
+					<?php
+						$lblEndTime = '終了時刻';
+						echo $this->Form->input('form.endTimeHh', array(
+								'type' => 'select',
+								'options' => array('0' => '0', '1' => '1', '2' => '2', '10' => '10'),
+								'selected' => '0',
+								'class' => 'select_time',
+								'label' => array(
+										'class' => 'hidden',
+										'text' => $lblEndTime
+								),
+								'after' => ':'
+						));
+						echo $this->Form->input('form.endTimeMm', array(
+								'type' => 'select',
+								'options' => array('0' => '0', '5' => '5', '10' => '10'),
+								'selected' => '1',
+								'class' => 'select_time',
+								'label' => array(
+										'class' => 'hidden',
+										'text' => $lblEndTime
+								)
+						));
+					?>
+
+				<td class="list_td destination">
+					<?php
+						$lblDestination = '目的地';
+						// 目的地
+						echo $this->Form->input('form.destination', array(
+								'type' => 'text',
+								'value' => '',
+								'maxlength' => 200,
+								'class' => 'width_full',
+								'placeholder' => $lblDestination,
+								'label' => array(
+										'class' => 'hidden',
+										'text' => $lblDestination
+								)
+						));
+					?>
+
+				<td class="list_td status ta_center">
 					依頼済
 
 				<td class="list_td cancel">

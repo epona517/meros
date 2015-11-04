@@ -7,12 +7,11 @@
 ========================================================================== */
 #mainContent {
 	margin: 0 auto;
-	padding-top: 120px;
+	padding-top: 128px;
 }
 
-#area__date2 {
+#area__request_date {
 	width: 50%;
-	float: left;
 }
 
 #area__car_inf {
@@ -20,7 +19,7 @@
 	/*width: 100%;*/
 
 	width: 50%;
-	float: left;
+	/*float: left;*/
 }
 	#tbl__car_inf {
 		width: 480px;
@@ -34,23 +33,23 @@
 			width: 75%;
 		}
 
-#area__date {
-	width: 100%;
-}
-	#tbl__date {
-		width: 1024px;
-		margin: 0 auto;
-	}
-		#tbl__date .inf_th__ttl {
-			width: 10%;
-		}
-		#tbl__date .inf_th__ctt {
-			width: 90%;
-		}
+/*#area__date {*/
+/*	width: 100%;*/
+/*}*/
+/*	#tbl__date {*/
+/*		width: 1024px;*/
+/*		margin: 0 auto;*/
+/*	}*/
+/*		#tbl__date .inf_th__ttl {*/
+/*			width: 10%;*/
+/*		}*/
+/*		#tbl__date .inf_th__ctt {*/
+/*			width: 90%;*/
+/*		}*/
 
-		#btn_execute {
-			margin-left: 16px;
-		}
+/*		#btn_execute {*/
+/*			margin-left: 16px;*/
+/*		}*/
 
 #area__action {
 	width: 100%;
@@ -79,6 +78,9 @@
 		width: 1024px;
 		margin: 0 auto;
 	}
+		.select_time {
+			margin: 0 4px;
+		}
 
 		th.edit_status { width: 3%; }
 		th.start_time  { width: 15%; }
@@ -159,7 +161,6 @@
 	.tbl__list td {
 		background-color: transparent;
 		padding: 4px 6px;
-		text-align: left;
 	}
 /* memo
 ========================================================================== */

@@ -12,9 +12,13 @@
 	<header id="mainHeader" class="table_parent">
 		<div id="systemTitle" class="table_child_c">
 			<h1>
-				<div id="logo" class="frame_circle"></div>
-				<?php echo h(SYSTEM_MAIN_NAME); ?>
+				<i class="fa fa-car"></i>
 			</h1>
+			<h4>
+				<?php
+					$this->View->makeSystemNameForLogin();
+				?>
+			</h4>
 		</div>
 	</header>
 

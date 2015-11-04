@@ -5,7 +5,7 @@
 /* structure
 ========================================================================== */
 #mainNav {
-	height: 40px;
+	/*height: 56px;*/
 	position: fixed;
 	top: 80px;
 	width: 100%;
@@ -16,7 +16,7 @@
 		border-bottom-right-radius: 12px;
 		border-bottom-left-radius: 12px;
 		box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, .2);
-		height: 40px;
+		height: 48px;
 		margin: 0 auto;
 		width: 98%;
 	}
@@ -42,7 +42,7 @@
 				font-size: 20px;
 				height: 30px;
 				line-height: 1.6em;
-				margin-top: 2px;
+				margin-top: 8px;
 				text-decoration: none;
 				width: 30px;
 			}

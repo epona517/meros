@@ -4,9 +4,17 @@
 var common = common || {};
 
 common.init = function() {
+	// PROCESS
+	// ======================================================================
 
-	common.loadMessage();
+	// EVENT
+	// ======================================================================
+
+	// LIBRARY / API
+	// ======================================================================
+
 };
+
 
 common.submit = function(action, params) {
 
@@ -18,7 +26,7 @@ common.submit = function(action, params) {
 	var rootPath = $('#rootPath').val();
 	var form = document.getElementById(myself + 'Form');
 
-	console.log(rootPath + myself + action + urlParam);
+	// console.log(rootPath + myself + action + urlParam);
 	form.action = rootPath + '/' + myself + '/' + action + urlParam;
 	form.submit();
 };
@@ -27,6 +35,8 @@ common.isPressedEnter = function(e) {
 
 	return e.keyCode == 13;
 };
+
+
 
 
 // dialog message

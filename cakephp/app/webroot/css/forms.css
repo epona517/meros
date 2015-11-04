@@ -29,7 +29,6 @@ input[placeholder]::-webkit-input-placeholder {
 	font-size: .8rem;
 }
 
-
 /* button + class = mortion + {type}
 -------------------------------------------------------------------------- */
 input[type="button"],
@@ -210,6 +209,7 @@ input[type=checkbox]:checked + .checkbox:before {
 		box-sizing: border-box;
 		color: #555;
 		cursor: pointer;
+		display: table-cell;
 		font-size: 0.9em;
 		height: inherit;
 		line-height: 0.92em;
@@ -231,13 +231,13 @@ input[type=checkbox]:checked + .checkbox:before {
 		background-color: rgba(98, 224, 255, .1);
 	}
 	select + .carat {
+		border: 6px solid transparent;
+		border-top: 8px solid #bbb;
 		cursor: pointer;
+		margin-top: -4px;
 		position: absolute;
 		right: 12px;
 		top: 50%;
-		margin-top: -4px;
-		border: 6px solid transparent;
-		border-top: 8px solid #bbb;
 	}
 	select + .carat:hover {
 		border-top-color: #CCBF3A;
@@ -245,6 +245,37 @@ input[type=checkbox]:checked + .checkbox:before {
 	select + .carat:active {
 		border-top-color: #CCBF3A;
 	}
+
+select {
+	background-color: #fff;
+	border: 1px solid #bbb;
+	border-radius: 4px;
+	box-sizing: border-box;
+	color: #555;
+	cursor: pointer;
+	height: 28px;
+	line-height: 1.2em;
+	font-size: 0.9em;
+	min-height: 28px;
+	min-width: 48px;
+	outline: none;
+	transition: background-color .2s linear;
+}
+select:hover {
+	border: 1px solid #CCBF3A;
+	background-color: rgba(204, 192, 58, .1);
+	transition: background-color 1s ease-out;
+}
+select:focus {
+	background-color: rgba(98, 224, 255, .1);
+}
+
+select option {
+	background-color: #eee;
+	border-bottom: 1px solid #ddd;
+	cursor: pointer;
+}
+
 
 /* textarea
 -------------------------------------------------------------------------- */

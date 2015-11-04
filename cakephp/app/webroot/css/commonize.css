@@ -2,7 +2,6 @@
 ================================================================ */
 html {
 	font-size: 16px;
-	text-align: center;
 }
 
 ul {
@@ -62,13 +61,18 @@ input[type="text"]:hover,
 input[type="password"]:hover,
 textarea:hover,
 input[type="button"]:active,
-button:active{
+button:active {
 	border: 1px solid #CCBF3A;
 }
 
 input[type="button"],
 button {
 	background-color: #CCBF3A;
+}
+
+input[type="button"],
+button {
+	outline: none;
 }
 
 /* object theme color - active
@@ -101,6 +105,9 @@ button:hover {
 	clear: both;
 	display: block;
 }
+.ta_center { text-align: center;}
+.ta_left { text-align: left;}
+.ta_right { text-align: right;}
 
 /* icon
 ================================================================ */
