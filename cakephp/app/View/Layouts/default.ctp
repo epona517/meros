@@ -22,17 +22,28 @@
 				<i class="fa fa-user"></i>
 			</div>
 		</div>
-	</header>#
+	</header>
 
 	<!--Navigation-->
-	<nav id="mainNav" class="area__nav">
-		<div class="nav__wrap_menu">
-			<ul>
-				<li class="nav_menu"><a href="#"><i class="fa fa-pencil-square-o"></i></a>
-				<li class="nav_menu"><a href="#" class="menu_txt">W</i></a>
-				<li class="nav_menu"><a href="#" class="menu_txt">M</a>
-			</ul>
-		</div>
+	<!--<nav id="mainNav" class="area__nav">-->
+	<!--	<div class="nav__wrap_menu">-->
+	<!--		<ul>-->
+	<!--			<li class="nav_menu"><a href="#"><i class="fa fa-pencil-square-o"></i></a>-->
+	<!--			<li class="nav_menu"><a href="#" class="menu_txt">W</i></a>-->
+	<!--			<li class="nav_menu"><a href="#" class="menu_txt">M</a>-->
+	<!--		</ul>-->
+	<!--	</div>-->
+	<!--</nav>-->
+	<nav id="mainNav" class="">
+		<ul>
+			<hr>
+			<li><a href="#"><i class="fa fa-pencil-square-o"></i><span>運行計画入力</span></a>
+			<hr>
+			<li><a href="#"><i class="fa fa-calendar-check-o"></i><span>運行計画週次<br>参照</span></a>
+			<hr>
+			<li><a href="#"><i class="fa fa-calendar"></i><span>運行計画月次<br>参照</span></a>
+			<hr>
+		</ul>
 	</nav>
 
 	<!--Content-->
